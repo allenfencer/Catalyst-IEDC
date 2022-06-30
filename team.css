@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.global-padding {
+    padding: 40px 70px;
+}
+
+.vertical-padding {
+    padding: 40px 0;
+}
+
+.horizontal-padding {
+    padding: 0 70px;
+}
+
+.global-button {
+    min-width: 15rem;
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+    border: 3px solid white;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: 0.4s ease;
+    margin: 30px 7rem;
+    color: #7F7FD5;
+}
+
+.global-button:hover {
+    min-width: 15rem;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border: 3px solid white;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 30px 7rem;
+}
+
+#team-landing-page{
+    width: 100%;
+    background-image: url('./images/bg.png');
+}
+
+#team-landing-page .title{
+    font-size: 8rem;
+    font-weight: 700;
+    text-align: center;
+    background: #7F7FD5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#nodal-officer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    background-image: url('./images/bg.png');
+}
+
+#nodal-officer h2{
+    font-size: 4rem;
+    color: white;
+    margin: 10px 0 40px 0;
+}
+
+#nodal-officer img{
+    height: 30rem;
+    width: 30rem;
+    background-size: contain;
+}
+
+#nodal-officer .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#nodal-officer .nodal-container{
+    margin: 0 30px;
+    padding: 30px;
+    border: 3px solid #91EAE4;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#nodal-officer .nodal-container h3{
+   font-size: 4rem;
+   font-weight: 500;
+   margin-bottom: 20px;
+}
+
+#nodal-officer .nodal-container p{
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #EEEEEE;
+    text-align: left;
+}
+
+#core-team{
+    width: 100%;
+    color: white;
+    background-image: url('./images/bg.png');
+}
+
+#core-team h2{
+    font-size: 4rem;
+    color: white;
+    margin: 10px 0 40px 0;
+}
+
+#core-team .core-member-row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#core-team .core-member-container img{
+    width: 20rem;
+    height: 20rem;
+}
+
+#core-team .core-member-container h3{
+    font-size: 2.4rem;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+#core-team .core-member-container h4{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgba(241, 47, 47, 0.783);
+    text-align: center;
+}
+
+#core-team .core-member-container{
+    width: 20rem;
+    background-color: black;
+    border: 2px solid #212121;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    margin-right: 22px;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    transition: 0.2s ease-in;
+}
+
+
+#subcore-team{
+    width: 100%;
+    color: white;
+    background-image: url('./images/bg.png');
+}
+
+#subcore-team h2{
+    font-size: 4rem;
+    color: white;
+    margin: 10px 0 40px 0;
+}
+
+#subcore-team .core-member-row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#subcore-team .core-member-container img{
+    width: 20rem;
+    height: 20rem;
+}
+
+#subcore-team .core-member-container h3{
+    font-size: 2.4rem;
+    margin-bottom: 7px;
+    text-align: center;
+
+}
+
+#subcore-team .core-member-container h4{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgba(241, 47, 47, 0.783);
+    text-align: center;
+}
+
+#subcore-team .core-member-container{
+    width: 20rem;
+    background-color: black;
+    border: 2px solid #212121;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    margin-right: 22px;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    transition: 0.2s ease-in;
+}
+
+#tribe-team{
+    width: 100%;
+    color: white;
+    background-image: url('./images/bg.png');
+}
+
+#tribe-team h2{
+    font-size: 4rem;
+    color: white;
+    margin: 10px 0 40px 0;
+}
+
+#tribe-team .core-member-row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#tribe-team .core-member-container img{
+    width: 20rem;
+    height: 20rem;
+}
+
+#tribe-team .core-member-container h3{
+    font-size: 2.4rem;
+    margin-bottom: 7px;
+    text-align: center;
+
+}
+
+#tribe-team .core-member-container h4{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgba(241, 47, 47, 0.783);
+    text-align: center;
+}
+
+#tribe-team .core-member-container{
+    width: 20rem;
+    background-color: black;
+    border: 2px solid #212121;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    margin-right: 22px;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    transition: 0.2s ease-in;
+}
+
+#iic-team{
+    width: 100%;
+    color: white;
+    background-image: url('./images/bg.png');
+}
+
+#iic-team h2{
+    font-size: 4rem;
+    color: white;
+    margin: 10px 0 40px 0;
+}
+
+#iic-team .core-member-row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#iic-team .core-member-container img{
+    width: 20rem;
+    height: 20rem;
+}
+
+#iic-team .core-member-container h3{
+    font-size: 2.4rem;
+    margin-bottom: 7px;
+    text-align: center;
+
+}
+
+#iic-team .core-member-container h4{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgba(241, 47, 47, 0.783);
+    text-align: center;
+}
+
+#iic-team .core-member-container{
+    width: 20rem;
+    background-color: black;
+    border: 2px solid #212121;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    margin-right: 22px;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    transition: 0.2s ease-in;
+}

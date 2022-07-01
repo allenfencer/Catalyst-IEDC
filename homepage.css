@@ -9,6 +9,7 @@
 html {
     font-size: 62.5%;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth
 }
 
 li {
@@ -22,6 +23,7 @@ a {
 .header {
     border-bottom: none;
     background-color: black;
+    background-image: url('./images/bg.png');
     color: white;
     height: 12rem;
     padding: 1.5rem 6rem;
@@ -156,7 +158,7 @@ a {
     background-color: black;
     padding: 15px;
     text-align: center;
-    border: 3px solid white;
+    border: 3px solid #91EAE4;
     font-size: 2rem;
     font-weight: 700;
     border-radius: 10px;
@@ -185,7 +187,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: contain;
-    background-image: url('./images/bg.png');
+    background-image: url('./images/gifBg.gif');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -265,7 +267,7 @@ a {
 
 #team-banner h2{
     font-size: 6rem;
-    margin: 2rem 0 4rem 0;
+    margin: 1rem 0 4rem 0;
     font-weight: 700;
     text-align: center;
     font-family: 'Raleway', sans-serif;
@@ -285,7 +287,6 @@ a {
     width: 100%;
     object-fit: cover;
     height: 90vh;
-    object-fit: cover;
     background-position: center;
     background-size: cover;
 }
@@ -303,12 +304,12 @@ a {
 /* Fading animation */
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 3s;
 }
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: 1
     }
 
     to {
@@ -372,6 +373,7 @@ a {
 
 #events-page .event {
     width: 25rem;
+    height: 42rem;
     border: 3px solid #212121;
     background-color: black;
     border-radius: 10px;
@@ -380,12 +382,13 @@ a {
     margin-bottom: 8rem;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     transition: 0.2s ease-in;
 }
 
 #events-page .event:hover {
     width: 25rem;
+    height: 42rem;
     background-color: black;
     border: 3px solid #7F7FD5;
     border-radius: 10px;
@@ -394,7 +397,7 @@ a {
     margin-bottom: 8rem;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     box-shadow: 0 5px 25px 3px#7F7FD5;
 }
 
@@ -404,6 +407,12 @@ a {
     align-items: flex-start;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+#events-page .event img{
+    height: 28rem;
+    width: 25rem;
+    border-radius: 4px;
 }
 
 #events-page .event h3 {
@@ -418,6 +427,7 @@ a {
     font-weight: 400;
     margin: 0 0 20px 0;
     color: white;
+    text-align: center;
 }
 
 #events-page .event-title-row{
@@ -430,4 +440,54 @@ a {
 
 #events-page .global-button{
     margin: 30px 4rem;
+}
+
+#facility{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: url('./images/radial.png');
+}
+
+#facility .title {
+    font-size: 6rem;
+    margin: 1rem 0 3rem 0;
+    font-weight: 700;
+    padding: 40px 0;
+    font-family: 'Raleway', sans-serif;
+    background: #7F7FD5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    padding: 25px 70px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
+}
+
+
+footer  i{
+    font-size: 3rem;
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+}
+
+footer i:hover{
+    font-size: 3rem;
+    margin: 0 20px;
+    color: indigo;
+    cursor: pointer;
 }

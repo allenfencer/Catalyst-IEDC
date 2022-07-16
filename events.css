@@ -85,6 +85,7 @@ html {
 	border: 3px solid #7f7fd5;
 	border-radius: 10px;
 	background-color: black;
+	margin-bottom: 80px;
 }
 
 #events-table tr:hover {
@@ -112,6 +113,8 @@ html {
 	border-radius: 2px;
 }
 
+
+/* MOBILE VIEW */
 @media only screen and (max-width: 768px) {
 	html {
 		background-color: black;
@@ -141,4 +144,5 @@ html {
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+	
 }

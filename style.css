@@ -445,6 +445,10 @@ footer i:hover {
 		background-color: black;
 	}
 
+	.navbar-padding{
+		padding: 10px 0;
+	}
+
 	.nav-menu {
 		position: fixed;
 		left: -100%;

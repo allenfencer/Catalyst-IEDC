@@ -453,7 +453,10 @@ footer i:hover {
 		position: fixed;
 		left: -100%;
 		top: 10rem;
+		bottom: 0;
+		background-image: url(./images/radial.png);
 		flex-direction: column;
+		justify-content: flex-start;
 		background-color: black;
 		width: 100%;
 		color: white;

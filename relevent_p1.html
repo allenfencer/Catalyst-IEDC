@@ -4,12 +4,143 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			http-equiv="refresh"
-			content="0; URL=https://docs.google.com/forms/d/e/1FAIpQLSfpHfPiT4V-w21Jn1nQhJ8FYOjCE8J3kf29wdG_kS3CbbDvzQ/viewform?usp=sf_link"
-		/>
-		<title>Relevent 22</title>
+		<title>Relevent 22 - Phase 1</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: "Satoshi", sans-serif;
+			}
+
+			body {
+				background-color: #d5433b;
+			}
+
+			.hero-section {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+
+			.hero-img {
+				width: 50%;
+				margin: 50px;
+			}
+
+			.hero-title {
+				font-size: 4vw;
+				color: white;
+				text-align: center;
+			}
+
+			.main-content {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-gap: 10px;
+				justify-content: space-around;
+				align-items: stretch;
+				margin: 100px;
+			}
+
+			.col {
+				background-color: white;
+				color: #d5433b;
+				border-radius: 5px;
+				padding: 20px;
+				font-size: 150%;
+				font-weight: 700;
+				text-align: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 5px;
+			}
+
+			@media screen and (max-width: 768px) {
+				.hero-title {
+					font-size: 6vw;
+				}
+				.main-content {
+					grid-template-columns: 1fr 1fr;
+				}
+			}
+		</style>
 	</head>
 
-	<body></body>
+	<body>
+		<div class="hero-section">
+			<img class="hero-img"" src="images/relevent_logo.png"/>
+			<h1 class="hero-title">Relevent Phase 1 Qualifiers</h1>
+		</div>
+		<div class="main-content"></div>
+	</body>
+	<script>
+		const qualifiers = [
+			"A R Gokul",
+			"Abhilash George",
+			"Abhiram Krishna R S",
+			"Abhishek Raman R",
+			"Abhishek S",
+			"Adithya Krishnan",
+			"Akshya Sreekumar",
+			"Allen Fencer",
+			"Aparna S",
+			"Arunesh J B",
+			"Aswathy Mohan",
+			"Aswen A M",
+			"Aswin S S",
+			"Ben George Netto",
+			"B S Meenakshy",
+			"C Rachana",
+			"Chris Mathew",
+			"Cyril Chacko",
+			"D Sandra Santhosh",
+			"Devi Nandana S V",
+			"Diya S",
+			"Ephy Eapen V George",
+			"Faizan Ahamed Dawood",
+			"Gouripriya S A",
+			"Goutham Girish",
+			"Gowri Nandana T",
+			"Jibin Babu B S",
+			"Joel Thomas Thazhamon",
+			"Jovan Mathew Thomas",
+			"Kashyap Sanal",
+			"Kiran Sara Abey",
+			"Liya Susan Biju",
+			"Mable T Paul",
+			"Negha S",
+			"Prajwal P P",
+			"Preethi Manoj",
+			"Raef Abdul Nazir",
+			"Rahul V",
+			"Revand S",
+			"Rhea Merin Thomas",
+			"Rithika Pradeep",
+			"Riya Rajesh",
+			"Ryan Prajoth",
+			"Safna S",
+			"Sania M S",
+			"Sanna Pramod",
+			"Saravan A D",
+			"Shahin Sadath",
+			"Shibin Shibu",
+			"Siddarth S",
+			"Sijo Ajay",
+			"Sophy Maria Joy",
+			"Soumya Sinha",
+			"Sruthi N A",
+			"Swetha S",
+			"Vasundaraa G",
+		];
+		const mainContainer = document.querySelector(".main-content");
+		qualifiers.forEach((name) => {
+			const col = document.createElement("div");
+			col.classList.add("col");
+			col.innerHTML = name;
+			mainContainer.appendChild(col);
+		});
+	</script>
 </html>

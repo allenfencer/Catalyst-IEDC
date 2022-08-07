@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Raleway", sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: "Raleway", sans-serif;
+}
+
+.global-padding {
+	padding: 40px 70px;
+}
+
+.vertical-padding {
+	padding: 40px 0;
+}
+
+.horizontal-padding {
+	padding: 0 70px;
+}
+
+#achievements-landing-page {
+	width: 100%;
+	background-image: url("./images/radial.png");
+}
+
+#achievements-landing-page .title {
+	font-size: 4.5rem;
+	font-weight: 700;
+	text-align: center;
+	background: #7f7fd5;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#achievements-table {
+	width: 100%;
+	background-color: black;
+	background-image: url("./images/radial.png");
+}
+
+#achievements-table table {
+	width: 100%;
+	padding: 10px;
+	text-align: left;
+	border: 3px solid #7f7fd5;
+	border-radius: 10px;
+	background-color: black;
+	margin-bottom: 80px;
+}
+
+#achievements-table tr:hover {
+	background-color: #212121;
+}
+
+#achievements-table th {
+	margin: 0 20px 0 20px;
+	height: 3rem;
+	font-size: 1.8rem;
+	padding: 30px;
+	color: #91eae4;
+	border: 2px solid #212121;
+	border-radius: 2px;
+}
+
+#achievements-table td {
+	margin: 0 20px 0 20px;
+	height: 3rem;
+	font-size: 1.4rem;
+	padding: 15px 30px 15px 30px;
+	color: white;
+	vertical-align: middle;
+	border: 2px solid #212121;
+	border-radius: 2px;
+}
+
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 768px) {
+	html {
+		background-color: black;
+	}
+
+	.global-padding {
+		padding: 40px 40px;
+	}
+
+	#achievements-landing-page {
+		width: 100%;
+		background-image: url("./images/bg.png");
+		display: flex;
+        align-items: center;
+		justify-content: center;
+        flex-wrap: wrap;
+	}
+
+	#achievements-landing-page .title {
+        width: 100%;
+        position: absolute;
+        font-size: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+		font-weight: 700;
+		text-align: center;
+        padding: none;
+		background: #7f7fd5;
+		/* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5);
+		/* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5);
+		/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	
+}
